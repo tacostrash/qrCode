@@ -5,3 +5,17 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+body{
+  background-color: hsl(220, 100%, 94%);
+}
+.card {
+  background-color: white;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+img {
+  border-radius: 25px;
+  justify-content: center;
+}
