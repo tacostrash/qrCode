@@ -6,25 +6,15 @@
   color: hsl(228, 45%, 44%);
 }
 
-body{
+body {
   background-color: hsl(220, 100%, 94%);
 }
-.card {
-  background-color: white;
-  border-radius: 25px;
-  box-sizing: border-box;
-}
 
-img {
+.img {
+  background-image: url(images/image-qr-code.png);
   border-radius: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  
-}
-
-.container{
-  padding: 2px 16px;
-  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
 }
