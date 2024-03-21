@@ -9,10 +9,17 @@
 body {
   background-color: hsl(220, 100%, 94%);
 }
-img {
+
+.center {
   border-radius: 23px;
-  margin: 10px 0 10px 0 ;
+  margin: 10px 0 10px 0;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* This code below is the card as a whole */
 .card{
   box-shadow: 0 4px 8px 0;
   max-width: 350px;
@@ -22,6 +29,11 @@ img {
   border-color: white;
   border-radius: 23px;
   border-style: solid;
+}
+
+.top-text{
+  font-size: 22px;
+  text-align: center;
 }
 
 .bottom-text{
