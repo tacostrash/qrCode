@@ -9,12 +9,24 @@
 body {
   background-color: hsl(220, 100%, 94%);
 }
+img {
+  border-radius: 23px;
+  margin: 10px 0 10px 0 ;
+}
+.card{
+  box-shadow: 0 4px 8px 0;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-color: white;
+  border-radius: 23px;
+  border-style: solid;
+}
 
-.img {
-  background-image: url(images/image-qr-code.png);
-  border-radius: 25px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 350px;
+.bottom-text{
+  color: grey;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 23px;
 }
