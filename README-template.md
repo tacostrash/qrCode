@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,89 +15,114 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./images/Screenshot%202024-03-21%20at%2010.50.19 PM.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution : [GitHub Repo](https://github.com/tacostrash/qrCode)
+- Live Site : [Vercel Link](https://qr-code-challenge.vercel.app/)
 
 ## My process
 
+I was trying to divide it into parts. I made three different `divs` and make three `class` as well at first. I realized that the image needed to be in somewhere in between so i plaved it in the middle `div` I was having trouble. I then reset everything and decided to do it one by one and it worked out very well.
+
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML
+- CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned so much. I learned how wveyrthing is connected when using `class`. I learned I need to put in a size of the image so it will appear. I figured out that I needed to resize the picture itself to get the white space I needed so it could look like the final result. I got the custom font to be assigned to the project. I really enjoyed working on this project because I completed it by googling and it felt nice to see it come together.
 
-To see how you can add code snippets, see below:
+````html
+<body>
+  <!-- Made a class named card to work on the card itself -->
+  <div class="card">
+    <!-- Image of the QR Code -->
+    <img
+      src="images/image-qr-code.png"
+      alt="This is a QR code"
+      class="center"
+    />
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+    <!-- This is the text for each and has it's own class name -->
+    <strong class="top-text">
+      Improve your front-end skills by building projects
+    </strong>
+    <p class="bottom-text">
+      Scan the QR code to visit Frontend Mentor and take your coding skills to
+      the next level.
+    </p>
+  </div>
+</body>
+```` 
+  
+  ```css 
+
+/* The page as a whole */
+body {
+  background-color: hsl(220, 100%, 94%);
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+/* This is the styling for the image */
+.center {
+  border-radius: 23px;
+  margin: 10px 0 10px 0;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  margin-bottom: 7%;
 }
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+/* This code below is the card as a whole */
+.card{
+  box-shadow: 0 4px 8px 0;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-color: white;
+  border-radius: 23px;
+  border-style: solid;
+}
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+/* The two below is for the text within the card.  */
+.top-text{
+  font-size: 27px;
+  font-weight: 700;
+}
 
+.bottom-text{
+  color: grey;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: white;
+  border-radius: 23px;
+}
+ 
+/* This is the font for everything */
+* {
+font-family: 'Outfit';
+}
+````
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I want to focus more on the JavaScript when tackling these projects. I really love HTML and CSS but I would like to develop my JS even more than what I know.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- LinkedIn - [Carlos Marin](https://www.linkedin.com/in/carlos-fragoso-marin/)
+- Frontend Mentor - [@tacostrash](https://www.frontendmentor.io/profile/tacostrash)
+- Github - [@Carlos Marin](https://github.com/tacostrash)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Worked on this like a real programmer and googled every problem I had very thankful to make this and actually learning to code better.

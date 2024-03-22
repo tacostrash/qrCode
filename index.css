@@ -6,10 +6,12 @@
   color: hsl(228, 45%, 44%);
 }
 
+/* The page as a whole */
 body {
   background-color: hsl(220, 100%, 94%);
 }
 
+/* This is the styling for the image */
 .center {
   border-radius: 23px;
   margin: 10px 0 10px 0;
@@ -33,6 +35,7 @@ body {
   border-style: solid;
 }
 
+/* The two below is for the text within the card.  */
 .top-text{
   font-size: 27px;
   font-weight: 700;
@@ -45,7 +48,8 @@ body {
   background-color: white;
   border-radius: 23px;
 }
-
+ 
+/* This is the font for everything */
 * {
 font-family: 'Outfit';
 }
